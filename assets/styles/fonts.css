@@ -12,6 +12,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-ico_comillasabre-2:before {
+  content: "\e919";
+}
+.icon-ico_comillascierra-2:before {
+  content: "\e91a";
+}
+.icon-ico_etiqueta-2:before {
+  content: "\e917";
+}
+.icon-ico_reportar:before {
+  content: "\e918";
+}
 .icon-ico_autor:before {
   content: "\e912";
 }

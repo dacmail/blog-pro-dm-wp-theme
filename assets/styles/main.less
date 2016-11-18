@@ -531,7 +531,16 @@ img {
                 border:0px;
                 margin:40px 0px;
                 &:before {
-                    content:open-quote;
+                    content: "\e919";
+                    font-family: 'diariomadrid' !important;
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
                     display: block;
                     position: absolute;
                     top:0px;
@@ -542,7 +551,16 @@ img {
                     padding-top:10px;
                 }
                 &:after {
-                    content:close-quote;
+                    content: "\e91a";
+                    font-family: 'diariomadrid' !important;
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
                     display: block;
                     position: absolute;
                     bottom:0px;
@@ -575,9 +593,11 @@ img {
                 border-bottom:1px solid #dddddd;
                 padding-bottom: 30px;
                 margin-bottom: 30px;
-                .fa {
+                i {
                     color: #888888;
-                    margin-right: 20px;
+                    margin-right: 10px;
+                    top:2px;
+                    position: relative;
                 }
                 a {
                     font-family: Montserrat;
@@ -593,6 +613,11 @@ img {
                 line-height: 1.7;
                 letter-spacing: 2px;
                 color: #333333;
+                i {
+                    margin-right: 5px;
+                    top:1px;
+                    position: relative;
+                }
             }
         }
     }

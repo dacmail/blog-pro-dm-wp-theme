@@ -12,8 +12,8 @@
             <?php wp_link_pages(); ?>
         </div>
         <div class="post-meta">
-            <?php the_tags('<div class="post-tags"><i class="icon-ico_etiqueta"></i>', ' / ', '</div>'); ?>
-            <a href="http://www.madrid.es/portales/munimadrid/es/Inicio/Actualidad?vgnextchannel=1578e3d5d3e07010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ae50a76d7388f410VgnVCM1000000b205a0aRCRD" target="_blank" class="post-report"><i class="icon-ico_megafono"></i> Comunicar error en la información</a>
+            <?php the_tags('<div class="post-tags"><i class="icon-ico_etiqueta-2"></i>', ' / ', '</div>'); ?>
+            <a href="http://www.madrid.es/portales/munimadrid/es/Inicio/Actualidad?vgnextchannel=1578e3d5d3e07010VgnVCM100000dc0ca8c0RCRD&vgnextoid=ae50a76d7388f410VgnVCM1000000b205a0aRCRD" target="_blank" class="post-report"><i class="icon-ico_reportar"></i> Comunicar error en la información</a>
         </div>
     </article>
     <?php $links = get_post_meta(get_the_ID(), '_ungrynerd_links', true); ?>
