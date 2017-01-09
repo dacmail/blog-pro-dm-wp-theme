@@ -9439,6 +9439,18 @@ img {
   margin-bottom: 15px;
   line-height: 1;
 }
+.post-share {
+  text-align: center;
+  font-size: 18px;
+}
+.post-share a {
+  color: #bbbbbb;
+  display: inline-block;
+  margin: 0px 8px;
+}
+.post-share a.icon.wa {
+  display: none;
+}
 .post-category {
   font-family: Montserrat;
   font-size: 16px;
@@ -9643,15 +9655,6 @@ img {
   bottom: 0px;
   left: 50%;
   margin-left: -150px;
-}
-.listing.hentry .post-share {
-  text-align: center;
-  font-size: 18px;
-}
-.listing.hentry .post-share a {
-  color: #bbbbbb;
-  display: inline-block;
-  margin: 0px 8px;
 }
 /*
     SIDEBAR WIDGETS
@@ -10204,12 +10207,16 @@ img {
   }
   .single .post-share a,
   .page .post-share a {
+    margin: 0px;
     width: 50px;
     line-height: 50px;
     height: 50px;
     border: 0px;
     display: inline-block;
     vertical-align: top;
+  }
+  .post-share a.icon.wa {
+    display: inline-block;
   }
   .archive .hentry .wp-post-image,
   .search .hentry .wp-post-image {
@@ -10231,5 +10238,12 @@ img {
     text-align: left;
     width: 100%;
     margin-top: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .listing.hentry .post-content:before,
+  .listing.hentry .post-content:after {
+    width: 250px;
+    margin-left: -130px;
   }
 }

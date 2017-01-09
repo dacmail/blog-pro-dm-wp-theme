@@ -30,5 +30,7 @@
             </a>
         <?php endif; ?>
     <?php endwhile; ?>
+    <?php if ($stickys->found_posts > 1): ?>
         </div> <!-- /.secondary-stickys -->
+    <?php endif; ?>
 <?php endif; ?>
