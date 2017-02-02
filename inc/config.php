@@ -24,6 +24,7 @@
 			register_nav_menus(
 				array(
 				  'main' => esc_html__('Menu principal', 'ungrynerd'),
+				  'footer' => esc_html__('Enlaces pie', 'ungrynerd'),
 				)
 			);
 		}

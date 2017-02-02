@@ -1,10 +1,13 @@
 	<footer class="footer">
         <div class="container">
             &copy; Ayuntamiento de Madrid CC by
-            <a href="#">¿Comentarios?</a>,
-            <a href="#">Política de privacidad</a>,
-            <a href="#">Condiciones de uso</a>,
-            <a href="#">Accesibilidad</a>
+            <?php wp_nav_menu(array(
+                        'container' => 'span',
+                        'items_wrap' => '%3$s',
+                        'container_class' => '',
+                        'theme_location' => 'footer',
+                        'walker' => new ungrynerd_walker_nav_menu));
+            ?>
             <div class="pull-right">
                  <a href="https://www.facebook.com/pages/Ayuntamiento-de-Madrid" target="_blank">facebook</a>,
                 <a href="http://instagram.com/madrid" target="_blank">instagram</a>,
