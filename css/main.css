@@ -9496,6 +9496,11 @@ img {
   max-height: 33px;
   width: auto;
 }
+.header .logo {
+  color: #000;
+  font-weight: 900;
+  margin-top: -10px;
+}
 .header .main-nav {
   display: table;
   float: right;
@@ -9594,6 +9599,12 @@ img {
   left: 50%;
   width: 60%;
   transform: translateX(-50%);
+}
+.main-sticky.hentry.no-thumbnail .post-data {
+  position: relative;
+  width: 100%;
+  left: auto;
+  transform: none;
 }
 .secondary-stickys {
   padding: 30px;

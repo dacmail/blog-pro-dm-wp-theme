@@ -123,6 +123,15 @@
 	        $query->set('post__not_in', get_option('sticky_posts'));
 	}
 
+	add_filter( 'post_class', 'ungrynerd_post_class', 10, 3 );
+	if( !function_exists( 'ungrynerd_post_class' ) ) {
+	    function ungrynerd_post_class( $classes, $class, $ID ) {
+	        if (!has_post_thumbnail()) {
+	        	$classes[] = 'no-thumbnail';
+	        }
+	    	return $classes;
+	    }
+	}
 
 	//Customize archives title
 	add_filter('get_the_archive_title', function($title) {
