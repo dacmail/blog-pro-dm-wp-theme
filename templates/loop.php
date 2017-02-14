@@ -6,7 +6,9 @@
         </h1>
         <p class="post-date"><?php the_time(get_option('date_format')); ?></p>
         <p class="post-author"><?php get_template_part('templates/post-author'); ?></p>
-        <?php the_post_thumbnail('col-8') ?>
+        <?php if (has_post_thumbnail() && (!get_post_meta(get_the_ID(), '_ungrynerd_hide_thumb', true)) ): ?>
+            <?php the_post_thumbnail('col-8') ?>
+        <?php endif ?>
         <div class="post-content">
             <?php the_content( __('Leer m&aacute;s &raquo;', 'ungrynerd')); ?>
             <?php wp_link_pages(); ?>

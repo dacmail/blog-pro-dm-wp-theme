@@ -1,5 +1,8 @@
 (function($) {
 	$(document).ready(function() {
+    $(".gallery").lightGallery({
+        selector: '.gallery-icon a'
+    });
 		$('.col-sm-1 .post-share').affix({
           offset: {
             top: function () {

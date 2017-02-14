@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     concat: {
       scripts: {
-        src: ['assets/scripts/main.js', 'assets/scripts/bootstrap.js'],
+        src: ['assets/scripts/main.js', 'assets/scripts/lightgallery.min.js', 'assets/scripts/bootstrap.js'],
         dest: 'js/main.js'
       }
     },
