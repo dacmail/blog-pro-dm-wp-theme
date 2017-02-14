@@ -1,4 +1,4 @@
-<?php $stickys = new WP_Query(array('post__in'  => get_option( 'sticky_posts' ), 'posts_per_page' => 3)); ?>
+<?php $stickys = new WP_Query(array('post__in'  => get_option( 'sticky_posts' ), 'posts_per_page' => 4)); ?>
 <?php if ($stickys->have_posts()) : ?>
     <?php while ($stickys->have_posts()) : $stickys->the_post(); ?>
         <?php if ($stickys->current_post == 0): ?>
@@ -25,7 +25,6 @@
                 <?php the_post_thumbnail('col-4-crop'); ?>
                 <h2 class="post-title">
                     <?php the_title(); ?>
-                    <span class="cat"><?php $cats = get_the_category(); echo $cats[0]->cat_name; ?></span>
                 </h2>
             </a>
         <?php endif; ?>

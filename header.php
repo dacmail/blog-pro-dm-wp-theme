@@ -9,7 +9,7 @@
 	<aside class="pre-header">
 		<div class="container">
 			Noticias del Ayuntamiento de Madrid
-			<img class="logo-madrid" src="<?php ungrynerd_path('/images/logo_madrid.png') ?>" alt="Ayuntamiento de Madrid">
+			<a href="https://diario.madrid.es"><img class="logo-madrid" src="<?php ungrynerd_path('/images/logo_madrid.png') ?>" alt="Ayuntamiento de Madrid"></a>
 		</div>
 	</aside>
 	<header class="navbar header" id="header">

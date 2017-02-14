@@ -159,3 +159,25 @@
 	    }
 	    return $title;
 	});
+
+	function ungrynerd_opengraph( $output ) {
+			return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
+		}
+	add_filter('language_attributes', 'ungrynerd_opengraph');
+
+	function ungrynerd_facebook_info() {
+		global $post;
+		if (!is_singular())
+			return;
+	        echo '<meta property="og:title" content="' . get_the_title() . '"/>';
+	        echo '<meta property="og:type" content="article"/>';
+	        echo '<meta property="og:url" content="' . get_permalink() . '"/>';
+	        echo '<meta property="og:site_name" content="Diario de Madrid"/>';
+		if(has_post_thumbnail( $post->ID )) {
+			$thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+			echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
+		}
+		echo "
+	";
+	}
+	add_action( 'wp_head', 'ungrynerd_facebook_info', 5 );
