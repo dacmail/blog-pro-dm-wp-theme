@@ -10463,7 +10463,7 @@ img {
   z-index: 9;
   background-color: #fff;
   padding: 30px 30px 0px 30px;
-  bottom: 0px;
+  bottom: 30px;
   left: 50%;
   width: 60%;
   transform: translateX(-50%);

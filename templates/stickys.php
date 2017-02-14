@@ -5,20 +5,16 @@
             <article <?php post_class('main-sticky') ?>>
                 <?php the_post_thumbnail('col-12'); ?>
                 <div class="post-data">
-                    <p class="post-category"><?php the_category(', '); ?></p>
                     <h2 class="post-title">
                         <a href="<?php the_permalink() ?>" title="Enlace a <?php the_title_attribute(); ?>">
                             <?php the_title(); ?>
                         </a>
                     </h2>
-                    <p class="post-date"><?php the_time(get_option('date_format')); ?></p>
-                    <p class="post-author"><?php get_template_part('templates/post-author'); ?></p>
                 </div>
             </article>
         <?php endif; ?>
         <?php if ($stickys->current_post == 1): ?>
             <div class="secondary-stickys">
-                <p class="post-category">Posts Destacados</p>
         <?php endif; ?>
         <?php if ($stickys->current_post > 0): ?>
             <a href="<?php the_permalink(); ?>" <?php post_class(); ?>>
