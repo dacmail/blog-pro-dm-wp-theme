@@ -1,4 +1,8 @@
-<?php $stickys = new WP_Query(array('post__in'  => get_option( 'sticky_posts' ), 'posts_per_page' => 4)); ?>
+<?php $stickys = new WP_Query(array(
+                'post_type'=> array('post', 'page'),
+                'meta_key' => '_ungrynerd_featured',
+                'meta_value' => 1,
+                'posts_per_page' => -1)); ?>
 <?php if ($stickys->have_posts()) : ?>
     <?php while ($stickys->have_posts()) : $stickys->the_post(); ?>
         <?php if ($stickys->current_post == 0): ?>

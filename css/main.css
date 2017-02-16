@@ -10597,6 +10597,9 @@ img {
   color: #fff;
   text-decoration: none;
 }
+.sidebar#footer-widgets {
+  background-color: #fff;
+}
 .search-form {
   margin-bottom: 40px;
 }

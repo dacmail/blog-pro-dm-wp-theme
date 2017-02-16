@@ -181,3 +181,11 @@
 	";
 	}
 	add_action( 'wp_head', 'ungrynerd_facebook_info', 5 );
+
+	add_action('pre_get_posts', 'ungrynerd_ignore_featured');
+	function ungrynerd_ignore_featured($query) {
+	    if (is_home() && $query->is_main_query()) {
+	        $query->set('meta_key', '_ungrynerd_featured');
+	    	$query->set('meta_value', 0);
+	    }
+	}

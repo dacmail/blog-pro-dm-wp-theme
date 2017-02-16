@@ -60,6 +60,14 @@
 		 	'after_title' => '</h2>',
 		 	'name' => esc_html__('Barra Lateral', 'ungrynerd')
 		));
+		register_sidebar(array(
+			'id' => 'sidebar-footer',
+		    'before_widget' => '<div id="%1$s" class="widget col-sm-4 %2$s">',
+		    'after_widget' => '</div>',
+		    'before_title' => '<h2 class="post-category">',
+		 	'after_title' => '</h2>',
+		 	'name' => esc_html__('Pre Footer Home', 'ungrynerd')
+		));
 	}
 	add_action('widgets_init', 'ungrynerd_widgets_init');
 ?>

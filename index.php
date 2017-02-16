@@ -14,5 +14,10 @@
 		</div>
 		<?php get_sidebar() ?>
 	</div> <!-- /.row -->
+	<?php if (is_active_sidebar("sidebar-footer")): ?>
+		<aside id="footer-widgets" class="clearfix sidebar">
+			<?php dynamic_sidebar("sidebar-footer"); ?>
+		</aside>
+	<?php endif ?>
 </div>
 <?php get_footer() ?>

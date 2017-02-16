@@ -20,6 +20,11 @@ $meta_boxes[] = array(
         'show_names' => true, // Show field names on the left
         'fields'     => array(
             array(
+                    'name' =>  __('Destacar en portada de blog', 'ungrynerd'),
+                    'id' => $prefix . 'featured',
+                    'type' => 'checkbox',
+                ),
+            array(
                     'name' =>  __('Autor/a', 'ungrynerd'),
                     'id' => $prefix . 'author',
                     'type' => 'text',
