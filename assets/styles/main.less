@@ -615,13 +615,11 @@ img {
                 }
             }
             .gallery {
-                margin: 40px 0px;
+                margin: 40px -75px;
                 padding-top:100px;
-                border-top:2px solid #000;
                 position: relative;
-                width: 100%;
                 &:before {
-                    content: "\e904";
+                    content: "\e91b";
                     font-family: 'diariomadrid' !important;
                     speak: none;
                     font-style: normal;
@@ -633,31 +631,17 @@ img {
                     position: absolute;
                     top:-21px;
                     left: 50%;
-                    margin-left: -20px;
-                    width: 40px;
-                    height: 40px;
-                    color: #fff;
-                    background-color: #000000;
-                    line-height: 40px;
+                    margin-left: -50px;
+                    width: 100px;
+                    height: 70px;
+                    color: #9B9B9B;
+                    line-height: 70px;
                     text-align: center;
+                    font-size: 27px;
+                    border-top:1px solid #DDDDDD;
+                    border-bottom:1px solid #DDDDDD;
                 }
                 .gallery-item {
-                    &:first-of-type {
-                        position: unset;
-                        &:before {
-                            position: absolute;
-                            font-size: 18px;
-                            font-weight: 900;
-                            text-align: center;
-                            text-transform: uppercase;
-                            content: "Galería fotográfica";
-                            display: block;
-                            width: 100%;
-                            text-align: center;
-                            color:#000000;
-                            top:40px;
-                        }
-                    }
                     img {
                         width: 100%;
                         height: auto;
@@ -680,12 +664,12 @@ img {
                         clear: both;
                     }
                     .gallery-item {
-                        width: 33%;
+                        width: 33.3334%;
                         float: left;
                         padding:1px;
 
                         &:first-of-type {
-                            width: 66%;
+                            width: 66.6667%;
                         }
                     }
                     .wp-caption-text {

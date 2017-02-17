@@ -9123,6 +9123,12 @@ button.close {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-ico_camara-2:before {
+  content: "\e91b";
+}
+.icon-ico_gallery:before {
+  content: "\e91c";
+}
 .icon-ico_comillasabre-2:before {
   content: "\e919";
 }
@@ -10864,15 +10870,13 @@ img {
 }
 .single .hentry .post-content .gallery,
 .page .hentry .post-content .gallery {
-  margin: 40px 0px;
+  margin: 40px -75px;
   padding-top: 100px;
-  border-top: 2px solid #000;
   position: relative;
-  width: 100%;
 }
 .single .hentry .post-content .gallery:before,
 .page .hentry .post-content .gallery:before {
-  content: "\e904";
+  content: "\e91b";
   font-family: 'diariomadrid' !important;
   speak: none;
   font-style: normal;
@@ -10884,30 +10888,15 @@ img {
   position: absolute;
   top: -21px;
   left: 50%;
-  margin-left: -20px;
-  width: 40px;
-  height: 40px;
-  color: #fff;
-  background-color: #000000;
-  line-height: 40px;
+  margin-left: -50px;
+  width: 100px;
+  height: 70px;
+  color: #9B9B9B;
+  line-height: 70px;
   text-align: center;
-}
-.single .hentry .post-content .gallery .gallery-item:first-of-type,
-.page .hentry .post-content .gallery .gallery-item:first-of-type {
-  position: unset;
-}
-.single .hentry .post-content .gallery .gallery-item:first-of-type:before,
-.page .hentry .post-content .gallery .gallery-item:first-of-type:before {
-  position: absolute;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-  content: "Galería fotográfica";
-  display: block;
-  width: 100%;
-  text-align: center;
-  color: #000000;
-  top: 40px;
+  font-size: 27px;
+  border-top: 1px solid #DDDDDD;
+  border-bottom: 1px solid #DDDDDD;
 }
 .single .hentry .post-content .gallery .gallery-item img,
 .page .hentry .post-content .gallery .gallery-item img {
@@ -10931,13 +10920,13 @@ img {
 }
 .single .hentry .post-content .gallery.gallery-columns-3 .gallery-item,
 .page .hentry .post-content .gallery.gallery-columns-3 .gallery-item {
-  width: 33%;
+  width: 33.3334%;
   float: left;
   padding: 1px;
 }
 .single .hentry .post-content .gallery.gallery-columns-3 .gallery-item:first-of-type,
 .page .hentry .post-content .gallery.gallery-columns-3 .gallery-item:first-of-type {
-  width: 66%;
+  width: 66.6667%;
 }
 .single .hentry .post-content .gallery.gallery-columns-3 .wp-caption-text,
 .page .hentry .post-content .gallery.gallery-columns-3 .wp-caption-text {
