@@ -12,6 +12,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-ico_camara-2:before {
+  content: "\e91b";
+}
+.icon-ico_gallery:before {
+  content: "\e91c";
+}
 .icon-ico_comillasabre-2:before {
   content: "\e919";
 }
