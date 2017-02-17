@@ -88,7 +88,14 @@
 	}
 	add_action('widgets_init', 'remove_recent_comments_style');
 
-
+	//Custom image sizes in Media popups
+	add_filter( 'image_size_names_choose', 'ungrynerd_custom_image_sizes' );
+	function ungrynerd_custom_image_sizes( $sizes ){
+		$custom_sizes = array(
+			'col-4-square' =>	'Miniatura de galería',
+		);
+		return array_merge( $sizes, $custom_sizes );
+	}
 
 	function enqueue_less_styles($tag, $handle) {
 	    global $wp_styles;
